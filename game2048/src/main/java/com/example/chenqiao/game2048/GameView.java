@@ -8,8 +8,10 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
+import android.widget.LinearLayout;
 import android.widget.GridLayout;
 
 import java.util.ArrayList;
@@ -56,7 +58,8 @@ public class GameView extends GridLayout {
 
         setColumnCount(lines);
         setBackgroundResource(R.drawable.bgshape3);
-        setPadding(5,5,5,5);
+        setPadding(5, 5, 5, 5);
+
 
 
         setOnTouchListener(new View.OnTouchListener() {
